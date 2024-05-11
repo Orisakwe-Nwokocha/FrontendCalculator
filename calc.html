@@ -13,15 +13,18 @@
 
     <form id="calculator">
         <label>
-            <input type="number" name="num1" placeholder="Enter first number" required>
-        </label><br>
+            <input class="input-number" type="text" name="firstNumber" placeholder="Enter first number" required>
+        </label>
+        <br>
         <label>
-            <input type="number" name="num2" placeholder="Enter second number" required>
-        </label><br>
-        <input type="submit" name="operation" value="Addition">
-        <input type="submit" name="operation" value="Subtraction">
-        <input type="submit" name="operation" value="Multiplication">
-        <input type="submit" name="operation" value="Division">
+            <input class="input-number" type="text" name="secondNumber" placeholder="Enter second number" required>
+        </label>
+        <br>
+
+        <input class="submit" type="submit" name="addition" value="Addition (+)">
+        <input class="submit" type="submit" name="subtraction" value="Subtraction (-)">
+        <input class="submit" type="submit" name="multiplication" value="Multiplication (*)">
+        <input class="submit" type="submit" name="division" value="Division (/)">
     </form>
 
     <div id="result"></div>

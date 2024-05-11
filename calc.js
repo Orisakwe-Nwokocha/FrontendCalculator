@@ -1,21 +1,25 @@
-document.getElementById("calculator").addEventListener("submit", function (event) {
+const calculator = document.forms["calculator"];
+
+calculator.addEventListener("submit", (event) => {
     event.preventDefault();
-    const num1 = parseFloat(document.getElementsByName("num1")[0].value);
-    const num2 = parseFloat(document.getElementsByName("num2")[0].value);
-    const operation = event.submitter.value;
+
     let result;
+    const firstNumber = parseFloat(document.getElementsByName("firstNumber")[0].value);
+    const secondNumber = parseFloat(document.getElementsByName("secondNumber")[0].value);
+    const operation = event.submitter.value;
+
     switch (operation) {
-        case "Addition":
-            result = num1 + num2;
+        case "Addition (+)":
+            result = firstNumber + secondNumber;
             break;
-        case "Subtraction":
-            result = num1 - num2;
+        case "Subtraction (-)":
+            result = firstNumber - secondNumber;
             break;
-        case "Multiplication":
-            result = num1 * num2;
+        case "Multiplication (*)":
+            result = firstNumber * secondNumber;
             break;
-        case "Division":
-            result = num1 / num2;
+        case "Division (/)":
+            result = firstNumber / secondNumber;
             break;
         default:
             result = "Invalid operation";
