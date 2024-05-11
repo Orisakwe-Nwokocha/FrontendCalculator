@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Calculator</title>
+    <link href="calc.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <h2>Orisha Calculator</h2>
+
+    <form id="calculator">
+        <label>
+            <input type="number" name="num1" placeholder="Enter first number" required>
+        </label><br>
+        <label>
+            <input type="number" name="num2" placeholder="Enter second number" required>
+        </label><br>
+        <input type="submit" name="operation" value="Addition">
+        <input type="submit" name="operation" value="Subtraction">
+        <input type="submit" name="operation" value="Multiplication">
+        <input type="submit" name="operation" value="Division">
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="calc.js"></script>
+</body>
+</html>
