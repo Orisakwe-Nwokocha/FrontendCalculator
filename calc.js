@@ -24,5 +24,6 @@ calculator.addEventListener("submit", (event) => {
         default:
             result = "Invalid operation";
     }
+    if (isNaN(result)) result = "Invalid operation"
     document.getElementById("result").innerText = "Result: " + result;
 });
